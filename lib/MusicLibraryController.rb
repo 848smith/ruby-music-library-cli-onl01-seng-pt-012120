@@ -70,5 +70,6 @@ class MusicLibraryController
     input = gets.strip.to_i
     song = Song.all[input]
     puts "Playing #{song.name} by #{song.artist.name}" if song
+    binding.pry
   end
 end
